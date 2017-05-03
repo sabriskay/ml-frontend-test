@@ -1,0 +1,26 @@
+{
+  "name": "front-end-test-ml",
+  "version": "1.0.0",
+  "description": "Test ML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabriskay/ssproviero.github.io.git"
+  },
+  "author": "sabrina kay sproviero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabriskay/ssproviero.github.io/issues"
+  },
+  "homepage": "https://github.com/sabriskay/ssproviero.github.io#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "chico": "^2.0.10",
+    "underscore": "^1.8.3",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

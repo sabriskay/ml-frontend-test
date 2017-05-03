@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../node_modules/chico/dist/ui/chico.min.css"/>
+    <link rel="stylesheet" href="../../stylesheets/widget.css"/>
+    <meta charset="UTF-8">
+    <title>UX Test | Widget Development v2</title>
+</head>
+<body>
+<div class="nav-main-content">
+    <section class="short-description vip-bg-alt" itemscope itemtype="http://schema.org/Product">
+        <header class="vip-section-header">
+            <h1 class="vip-title-main">'Ipad Mini Apple 16 Gb Wifi Led 7.9'</h1>
+        </header>
+    </section>
+    <section class="vip-section-description vip-bg-alt" id="shortDescription">
+        <nav class="vip-container">
+            <div class="vip-gallery-container">
+                <div id="productGalleryCollection" class="vip-gallery" data-gallery>
+                    <div id="gallery_dflt" class="product-gallery thumbs-col-1 ch-enlarge ch-points-ltrt">
+                        <div class="gallery-content">
+                            <div class="gallery-image-container" itemscope itemtype="http://schema.org/ImageObject">
+                                <img src="../views/Ipad-Mini-Apple-16gb-1.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vip-product-info" id="productInfo">
+                <fieldset class="vip-price-container">
+                    <legend>Price</legend>
+                    <article class="vip-price ch-price">
+                        <strong>
+                            $ 4799<sup>99</sup>
+                        </strong>
+                    </article>
+                </fieldset>
+                <fieldset class="vip-stock-select quantity-selection">
+                    <div class="stock-string">
+                        <legend class="test">Quantity: </legend>
+                        <select id="quality-select" class="stock-quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="stock-string">
+                        <legend>Payments: </legend>
+                        <select id="payment-select" class="stock-payment">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <input type="button" class="ch-btn ch-btn-large button" value="Buy" itemscope itemtype="http://schema.org/BuyAction"/>
+                    <div class="info-message">Mercadolibre isn't the owner of this product</div>
+                </fieldset>
+                <div class="more-product-suggestion" itemscope itemtype="http://schema.org/SomeProducts">
+                    <h2>More Products like this</h2>
+                    <div class="more-product-list ch-carousel">
+                        <ul>
+                            <li itemscope itemtype="http://schema.org/Offer">
+                                <a href="#" role="link" title="Related product #1" itemprop="url">
+                                    <img src="../views/Ipad-Mini-Apple-16gb-1.jpg" alt="Related product #1">
+                                </a>
+                            </li>
+                            <li itemscope itemtype="http://schema.org/Offer">
+                                <a href="#" role="link" title="Related product #2" itemprop="url">
+                                    <img src="../views/Ipad-Mini-Apple-16gb-1.jpg" alt="Related product #2">
+                                </a>
+                            </li>
+                            <li itemscope itemtype="http://schema.org/Offer">
+                                <a href="#" role="link" title="Related product #3" itemprop="url">
+                                    <img src="../views/Ipad-Mini-Apple-16gb-1.jpg" alt="Related product #3">
+                                </a>
+                            </li>
+                            <li itemscope itemtype="http://schema.org/Offer">
+                                <a href="#" role="link" title="Related product #4" itemprop="url">
+                                    <img src="../views/Ipad-Mini-Apple-16gb-1.jpg" alt="Related product #4">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="vip-section-tab-info">
+        <div class="tab-container" role="tablist">
+            <input id="tab1" role="tab" aria-controls="content1" aria-selected="true" type="radio" name="tabs" checked>
+            <label for="tab1"><span>Product Description</span></label>
+
+            <input id="tab2" role="tab" aria-controls="content2" aria-selected="false" type="radio" name="tabs">
+            <label for="tab2"><span>Questions</span></label>
+
+            <section role="tabpanel" aria-labelledby="tab1" id="content1" class="tab-content" itemprop="description">
+                <h3>Product Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae euismod ante. Cras ipsum libero,
+                    ultricies at tellus sed, eleifend aliquet velit. Nam vel iaculis sem. Donec tempor nisl posuere ipsum vehicula,
+                    quis vulputate nisl feugiat. Nullam vel lobortis mi, ac gravida quam. Ut ut tincidunt arcu. Suspendisse pulvinar
+                    diam massa.</p>
+            </section>
+
+            <section role="tabpanel" aria-labelledby="tab2" id="content2" class="tab-content">
+                <section class="mesh-row">
+                    <div class="mesh-col-xs-12">
+                        <ol class="questions-list">
+                            <li>
+                                <dl class="question" itemscope itemtype="http://schema.org/Question">
+                                    <dt>
+                                        <i class="ch-icon-comment" title="Buyer Name #1"></i>
+                                        <label title="Buyer Name #1">Buyer Name 1:</label>
+                                    </dt>
+                                    <dd class="content" itemprop="text">
+                                        <p>Do you have this one in white?</p>
+                                    </dd>
+                                    <dt class="answer">
+                                        <i class="ch-icon-comments-alt" title="Seller Name"></i>
+                                        <label title="Seller Name" itemprop="author" itemscope itemtype="http://schema.org/Person">Seller Name:</label>
+                                    </dt>
+                                    <dd class="content answer-content"  itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
+                                        <p>No I don't, I only have black</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <p class="see-more" itemscope itemtype="http://schema.org/FollowAction">
+                                <a role="link" href="#" title="See more questions" itemprop="url">See more questions</a>
+                            </p>
+                        </ol>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+
+</div>
+<script src="https://ui.mlstatic.com/chico/tiny/0.2.3/tiny.min.js"></script>
+<script src="../../node_modules/chico/dist/ui/chico.js"></script>
+<script src=".././carousel.js"></script>
+</body>
+</html>
