@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../node_modules/chico/dist/ui/chico.min.css"/>
-    <link rel="stylesheet" href="../../stylesheets/widget.css"/>
+    <link rel="stylesheet" href="../../stylesheets/src/shared/styles/main.css"/>
     <meta charset="UTF-8">
     <title>UX Test | Widget Development v2</title>
 </head>
@@ -10,7 +9,7 @@
 <div class="nav-main-content">
     <section class="short-description vip-bg-alt" itemscope itemtype="http://schema.org/Product">
         <header class="vip-section-header">
-            <h1 class="vip-title-main">'Ipad Mini Apple 16 Gb Wifi Led 7.9'</h1>
+            <h1 class="vip-title-main">Ipad Mini Apple 16 Gb Wifi Led 7.9</h1>
         </header>
     </section>
     <section class="vip-section-description vip-bg-alt" id="shortDescription">
@@ -27,44 +26,46 @@
                 </div>
             </div>
             <div class="vip-product-info" id="productInfo">
-                <fieldset class="vip-price-container">
-                    <legend>Price</legend>
-                    <article class="vip-price ch-price">
-                        <strong>
-                            $ 4799<sup>99</sup>
-                        </strong>
-                    </article>
-                </fieldset>
-                <fieldset class="vip-stock-select quantity-selection">
-                    <div class="stock-string">
-                        <legend class="test">Quantity: </legend>
-                        <select id="quality-select" class="stock-quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="stock-string">
-                        <legend>Payments: </legend>
-                        <select id="payment-select" class="stock-payment">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
-                    </div>
-                    <input type="button" class="ch-btn ch-btn-large button" value="Buy" itemscope itemtype="http://schema.org/BuyAction"/>
-                    <div class="info-message">Mercadolibre isn't the owner of this product</div>
-                </fieldset>
+                <form action="/addToCart" method="get" class="ch-form product-form">
+                    <fieldset class="vip-price-container">
+                        <legend>Price</legend>
+                        <article class="vip-price ch-price">
+                            <strong>
+                                $ 4799<sup>99</sup>
+                            </strong>
+                        </article>
+                    </fieldset>
+                    <fieldset class="vip-stock-select quantity-selection">
+                        <div class="stock-string ch-form-row ch-form-row-inline">
+                            <label class="test">Quantity: </label>
+                            <select id="quality-select" class="stock-quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="stock-string ch-form-row ch-form-row-inline">
+                            <label>Payments: </label>
+                            <select id="payment-select" class="stock-payment">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <input type="button" class="ch-btn ch-btn-large button" value="Buy" itemscope itemtype="http://schema.org/BuyAction"/>
+                        <div class="info-message">Mercadolibre isn't the owner of this product</div>
+                    </fieldset>
+                </form>
                 <div class="more-product-suggestion" itemscope itemtype="http://schema.org/SomeProducts">
                     <h2>More Products like this</h2>
                     <div class="more-product-list ch-carousel">
@@ -105,10 +106,26 @@
 
             <section role="tabpanel" aria-labelledby="tab1" id="content1" class="tab-content" itemprop="description">
                 <h3>Product Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae euismod ante. Cras ipsum libero,
-                    ultricies at tellus sed, eleifend aliquet velit. Nam vel iaculis sem. Donec tempor nisl posuere ipsum vehicula,
-                    quis vulputate nisl feugiat. Nullam vel lobortis mi, ac gravida quam. Ut ut tincidunt arcu. Suspendisse pulvinar
-                    diam massa.</p>
+                <p>The 16GB iPad mini 2 with Retina Display from Apple has a smaller form factor than its big brother, the iPad Air.
+                    The iPad mini 2 is just 7.5mm thin and weighs less than 1 pound. Its smaller form factor makes it easier to hold in one hand.
+                    The iPad mini 2 comes in a silver finish.</p>
+                <p>The 7.9" Retina Display makes its debut on the iPad mini 2, maintaining its enormous 2048 x 1536 native resolution.
+                    At 326 pixels per inch, the Retina Display can show up to 3.1 million pixels at a time.
+                    The Retina Display is also a capacitive touchscreen so you'll be able to utilize all the multi-touch gestures of iOS 7.</p>
+                <p>While the iPad mini 2 may have a smaller form factor than the iPad Air, it still has the same dual-core A7 chip.
+                    Apple introduces the 64-bit architecture with the A7 chip, allowing for more robust and powerful apps.
+                    In fact, the A7 chip runs four times faster than the previous generation iPad mini.
+                    Also,
+                    the A7 chip supports OpenGL ES version 3.0 so the iPad mini 2 can enable detailed graphics and visual effects once only possible on desktop computers and game consoles.</p>
+                <p>The A7 chip is accompanied by the M7 coprocessor, which measures the motion of the iPad mini 2.
+                    By pulling data from the accelerometer, gyroscope and compass, it lightens the load of the A7 chip.
+                    This frees up the A7 chip to focus on processing multiple tasks and maintaining fast performance.
+                    The iPad mini 2 may have the Retina Display, but it still manages to maintain its 10-hour battery life.
+                    That's because the A7 chip isn't just more powerful, it's also more efficient.</p>
+                <p>With iCloud, you can sync your iPad mini 2 to your other iOS devices and Mac computers.
+                    Push photos, download apps and continue from where you left off in iBooks with iCloud.
+                    iCloud also offers cloud storage so you can back up your contacts, photos and important documents to Apple's cloud servers.
+                    You can restore your iPad mini 2 to a previous state using iCloud.</p>
             </section>
 
             <section role="tabpanel" aria-labelledby="tab2" id="content2" class="tab-content">
@@ -118,15 +135,13 @@
                             <li>
                                 <dl class="question" itemscope itemtype="http://schema.org/Question">
                                     <dt>
-                                        <i class="ch-icon-comment" title="Buyer Name #1"></i>
-                                        <label title="Buyer Name #1">Buyer</label>
+                                        <p title="Buyer #1">Buyer: </p>
                                     </dt>
                                     <dd class="content" itemprop="text">
                                         <p>Do you have this one in white?</p>
                                     </dd>
                                     <dt class="answer">
-                                        <i class="ch-icon-comments-alt" title="Seller Name"></i>
-                                        <label title="Seller Name" itemprop="author" itemscope itemtype="http://schema.org/Person">Seller</label>
+                                        <p title="Seller" itemprop="author" itemscope itemtype="http://schema.org/Person">Seller: </p>
                                     </dt>
                                     <dd class="content answer-content"  itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
                                         <p>No I don't, I only have black</p>
@@ -142,7 +157,6 @@
             </section>
         </div>
     </section>
-
 </div>
 <script src="https://ui.mlstatic.com/chico/tiny/0.2.3/tiny.min.js"></script>
 <script src="../../node_modules/chico/dist/ui/chico.js"></script>

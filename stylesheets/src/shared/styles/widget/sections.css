@@ -1,0 +1,90 @@
+.vip-bg-alt {
+  background: #F4F4F4; }
+
+[class*="vip-section-"] {
+  padding: 6px 0; }
+
+.short-description .vip-section-header {
+  text-align: center;
+  text-indent: 50px;
+  padding: 15px 0; }
+  .short-description .vip-section-header .vip-title-main {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 2.3em;
+    position: relative;
+    color: #333;
+    line-height: 1.2em; }
+
+.vip-section-description {
+  text-align: center;
+  margin: auto; }
+  .vip-section-description .vip-container {
+    border-bottom: 1px solid #CCC;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 17px;
+    position: relative; }
+  .vip-section-description .vip-gallery-container {
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; }
+    .vip-section-description .vip-gallery-container .vip-gallery {
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      position: relative; }
+      .vip-section-description .vip-gallery-container .vip-gallery .product-gallery {
+        margin: 0 auto 25px;
+        text-align: center;
+        min-height: 50%;
+        position: relative;
+        padding-right: 554px;
+        overflow: hidden;
+        width: 42px; }
+  .vip-section-description .vip-product-info {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    max-width: 480px;
+    min-width: 390px;
+    padding-left: 30px; }
+    .vip-section-description .vip-product-info .vip-stock-select {
+      overflow: visible;
+      display: inline-block;
+      vertical-align: top; }
+      .vip-section-description .vip-product-info .vip-stock-select .stock-string {
+        display: block;
+        margin: 5px 0;
+        color: #999;
+        float: none;
+        min-width: 50%; }
+        .vip-section-description .vip-product-info .vip-stock-select .stock-string label {
+          text-align: left;
+          width: 20%;
+          padding: 0;
+          margin-right: 15px;
+          color: #333; }
+        .vip-section-description .vip-product-info .vip-stock-select .stock-string .stock-quantity, .vip-section-description .vip-product-info .vip-stock-select .stock-string .stock-payment {
+          width: 20%;
+          border: 2px solid #999; }
+      .vip-section-description .vip-product-info .vip-stock-select.quantity-selection {
+        padding-bottom: 0; }
+    .vip-section-description .vip-product-info .vip-price-container .vip-price {
+      font-size: 2.8em;
+      margin-bottom: 5px; }
+    .vip-section-description .vip-product-info .vip-price-container > legend {
+      display: none; }
+    .vip-section-description .vip-product-info > fieldset {
+      padding: 10px 0; }
+  .vip-section-description .info-message {
+    display: block;
+    margin: 5px 0;
+    color: #999;
+    font-style: italic; }
+
+.vip-section-tab-info {
+  padding: 6px 10px;
+  background: #F4F4F4; }
+
+/*# sourceMappingURL=sections.css.map */

@@ -1,0 +1,18 @@
+.more-product-suggestion {
+  h2 {
+    margin-bottom: 3%;
+  }
+  .more-product-list {
+    img {
+      max-width: 100%;
+    }
+    .ch-carousel-item {
+      width: 100px;
+      height: 100px;
+      padding: 3px;
+      background-color: #F4F4EF;
+      border: 1px solid #DDD;
+      border-radius: 4px;
+    }
+  }
+}

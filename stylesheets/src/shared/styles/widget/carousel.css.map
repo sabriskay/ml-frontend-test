@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,2BAAG;EACD,aAAa,EAAE,EAAE;AAGjB,+CAAI;EACF,SAAS,EAAE,IAAI;AAEjB,6DAAkB;EAChB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,GAAG;EACZ,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,GAAG",
+"sources": ["../../../../../src/shared/styles/widget/carousel.scss"],
+"names": [],
+"file": "carousel.css"
+}

@@ -1,0 +1,116 @@
+$color-stock-string: #999;
+$color-label-string: #333;
+$color-tab: #F4F4F4;
+
+.vip-bg-alt {
+  background: #F4F4F4;
+}
+
+[class*="vip-section-"] {
+  padding: 6px 0;
+}
+
+.short-description {
+  .vip-section-header {
+    text-align: center;
+    text-indent: 50px;
+    padding: 15px 0;
+    .vip-title-main {
+      font-weight: 400;
+      margin: 10px 0;
+      font-size: 2.3em;
+      position: relative;
+      color: $color-label-string;
+      line-height: 1.2em;
+    }
+  }
+}
+
+.vip-section-description {
+  text-align: center;
+  margin: auto;
+  .vip-container {
+    border-bottom: 1px solid #CCC;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 17px;
+    position: relative;
+  }
+  .vip-gallery-container {
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    .vip-gallery {
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      position: relative;
+      .product-gallery {
+        margin: 0 auto 25px;
+        text-align: center;
+        min-height: 50%;
+        position: relative;
+        padding-right: 554px;
+        overflow: hidden;
+        width: 42px;
+      }
+    }
+  }
+  .vip-product-info {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    max-width: 480px;
+    min-width: 390px;
+    padding-left: 30px;
+    .vip-stock-select {
+      overflow: visible;
+      display: inline-block;
+      vertical-align: top;
+      .stock-string {
+        display: block;
+        margin: 5px 0;
+        color: $color-stock-string;
+        float: none;
+        min-width: 50%;
+        label {
+          text-align:left;
+          width: 20%;
+          padding: 0;
+          margin-right: 15px;
+          color: $color-label-string;
+        }
+        .stock-quantity,.stock-payment {
+          width: 20%;
+          border: 2px solid $color-stock-string;
+        }
+      }
+      &.quantity-selection {
+        padding-bottom: 0;
+      }
+    }
+    .vip-price-container {
+      .vip-price {
+        font-size: 2.8em;
+        margin-bottom: 5px;
+      }
+      > legend {
+        display: none;
+      }
+    }
+    > fieldset {
+      padding: 10px 0;
+    }
+  }
+  .info-message {
+    display: block;
+    margin: 5px 0;
+    color: $color-stock-string;
+    font-style: italic;
+  }
+}
+
+.vip-section-tab-info {
+  padding: 6px 10px;
+  background: $color-tab;
+}

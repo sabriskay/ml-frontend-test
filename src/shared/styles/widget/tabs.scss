@@ -1,0 +1,68 @@
+.tab-container {
+  margin: 0 auto;
+  position: relative;
+  #tab1, #tab2, .tab-content {
+    clear: both;
+    padding-top: 10px;
+    display: none;
+  }
+  .tab-content {
+    h3 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+    p, h3, li {
+      -webkit-animation: fadeInScale 0.7s ease-in-out;
+      animation: fadeInScale 0.7s ease-in-out;
+    }
+  }
+  label {
+    display: block;
+    float: left;
+    padding: 15px;
+    color: #757575;
+    cursor: pointer;
+    text-align: center;
+  }
+  [id^="tab"]:checked + label {
+    background: #FFF;
+    -webkit-box-shadow: inset 0 3px #DCD9B4;
+    box-shadow: inset 0 3px #DCD9B4;
+  }
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+  padding: 18px;
+  background: #FFF;
+  border-bottom: 2px solid #DCD9B4;
+}
+
+.questions-list {
+  clear: both;
+  li {
+    margin-bottom: 25px;
+  }
+  .question {
+    background: #ddd;
+    padding: 5px 2px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .question {
+    .content {
+      padding-left: 20px;
+    }
+    .answer-content {
+      font-style: italic;
+    }
+    label {
+      display: none;
+    }
+    .see-more {
+      text-align: center;
+    }
+  }
+}
