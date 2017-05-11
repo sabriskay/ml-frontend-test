@@ -2,7 +2,6 @@
     'use strict';
 
     function qS(selector) {
-        console.log(selector);
         return document.querySelector(selector);
     };
 
